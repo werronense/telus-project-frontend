@@ -1,15 +1,14 @@
 @use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
 
 .search-page {
   // padding
   @include site-side-padding;
-  display: flex;
-  justify-content: center;
+  @include flex(normal, center, column);
   &__container {
     // flexbox
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    width: 100%;
+    @include flex(center, normal, column);
     // margin
     margin-top: 3rem;
     margin-bottom: 4rem;
@@ -18,15 +17,15 @@
     max-width: 800px;
   }
   &__title {
-    color: #4b286d;
+    color: $primary-purple;
     font-size: 3rem;
   }
   &__description {
-    color: #676e73;
+    color: $primary-grey;
     margin: 1.5rem 0;
   }
   &__instruction {
-    color: #676e73;
+    color: $primary-grey;
     margin: 1.5rem 0;
     @include desktop {
       max-width: 23rem;
@@ -39,19 +38,22 @@
     background-color: black;
   }
   &__subtitle {
-    color: #4b286d;
+    color: $primary-purple;
     margin: 1rem 0;
   }
+
   &__current-bundle-container {
-    display: flex;
-    justify-content: space-between;
+    @include flex(normal, space-between, row);
+
     gap: 0.75rem;
+    width: 100%;
   }
-  //   &__ss-logo-wrapper {
-  //   }
+  &__ss-logo-wrapper {
+    width: 100%;
+  }
   &__ss-logo-img {
-    height: 4rem;
-    width: 4rem;
+    height: 3.5rem;
+    width: 3.5rem;
   }
 }
 
