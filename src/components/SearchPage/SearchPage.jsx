@@ -1,10 +1,6 @@
 import "./SearchPage.scss";
-import searchIcon from "../../assets/icons/icon-search.svg";
 import SearchResult from "../SearchResult/SearchResult";
-
-const submitHandler = (event) => {
-  event.preventDefault();
-};
+import SearchBar from "../SearchBar/SearchBar";
 
 function SearchPage() {
   return (
@@ -23,18 +19,7 @@ function SearchPage() {
           your bundle.
         </h3>
 
-        <div className="search-page__input-icon-container">
-          <form className="search-page__search-form" onSubmit={submitHandler}>
-            <input className="search-page__search-input" type="search" />
-            <button className="search-page__search-button">
-              <img
-                className="search-page__search-icon"
-                src={searchIcon}
-                alt="Search Icon"
-              />
-            </button>
-          </form>
-        </div>
+        <SearchBar />
 
         <div className="search-page__divider"></div>
 

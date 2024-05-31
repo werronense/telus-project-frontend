@@ -1,7 +1,7 @@
 import "./SearchResult.scss";
-import searchIcon from "../../assets/icons/icon-search.svg";
 import arrowBackIcon from "../../assets/icons/icon-arrow-back.svg";
 import netflixLogo from "../../assets/images/netflix-logo.webp";
+import SearchBar from "../SearchBar/SearchBar";
 
 export default function SearchResult() {
   const submitHandler = (event) => {
@@ -10,18 +10,7 @@ export default function SearchResult() {
 
   return (
     <>
-      <div className="search-page__input-icon-container">
-        <form className="search-page__search-form" onSubmit={submitHandler}>
-          <input className="search-page__search-input" type="search" />
-          <button className="search-page__search-button">
-            <img
-              className="search-page__search-icon"
-              src={searchIcon}
-              alt="Search Icon"
-            />
-          </button>
-        </form>
-      </div>
+      <SearchBar />
 
       <section className="search-result">
         <div className="search-result__breadcrumb-group">
