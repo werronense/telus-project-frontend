@@ -1,128 +1,90 @@
-@use '../../styles/partials/mixins' as *;
+@use "../../styles/partials/mixins" as *;
 
-.search-page{
-    // padding
-    @include site-side-padding;
+.search-page {
+  // padding
+  @include site-side-padding;
+  display: flex;
+  justify-content: center;
+  &__container {
+    // flexbox
     display: flex;
-    justify-content: center;
-    &__container{
-        // flexbox
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        // margin
-        margin-top: 3rem;
-        margin-bottom: 4rem;
-        // text align
-        text-align: center;
-        max-width: 800px;
+    flex-direction: column;
+    align-items: center;
+    // margin
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+    // text align
+    text-align: center;
+    max-width: 800px;
+  }
+  &__title {
+    color: #4b286d;
+    font-size: 3rem;
+  }
+  &__description {
+    color: #676e73;
+    margin: 1.5rem 0;
+  }
+  &__instruction {
+    color: #676e73;
+    margin: 1.5rem 0;
+    @include desktop {
+      max-width: 23rem;
     }
-    &__title{
-        color: #4B286D;
-        font-size: 3rem;
-    }
-    &__description{
-        color: #676E73;
-        margin: 1.5rem 0;
-    }
-    &__instruction{
-        color: #676E73;
-        margin: 1.5rem 0;
-        @include desktop {
-            max-width: 23rem;
-        }
-    }
-    &__input-icon-container{
-        width: 100%;
-        margin-bottom: 3rem;
-        position: relative;
-        @include desktop {
-            max-width: 23rem;
-        }
-    }
-    &__search-form{}
-    &__search-input{
-        width: 100%;
-        height: 3rem;
-        border: 1px solid #676E73;
-        border-radius: 2rem;
-        padding: 0 1rem;
-        font-size: 1.25rem;
-        &:focus{
-            outline: 2px solid #4B286D;
-        }
-    }
-    &__search-button{
-        position: absolute;
-        right: 0.5rem;
-        top: 0.35rem;
-        background-color: #4B286D;
-        border-radius: 50%;
-        border: none;
-        height: 2.25rem;
-        width: 2.25rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        &:hover{
-            cursor: pointer;
-        }
-        &:active{
-            background-color: #311c46;
-        }
-    }
-    &__search-icon{}
-    &__divider{
-        height: 1px;
-        width: 100%;
-        background-color: black;
-    }
-    &__subtitle{
-        color: #4B286D;
-        margin: 1rem 0;
-    }
-    &__current-bundle-container{
-        display: flex;
-        justify-content: space-between;
-        gap: 0.75rem;
-    }
-    &__ss-logo-wrapper{}
-    &__ss-logo-img{
-        height: 4rem;
-        width: 4rem;
-    }
+  }
+
+  &__divider {
+    height: 1px;
+    width: 100%;
+    background-color: black;
+  }
+  &__subtitle {
+    color: #4b286d;
+    margin: 1rem 0;
+  }
+  &__current-bundle-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.75rem;
+  }
+  //   &__ss-logo-wrapper {
+  //   }
+  &__ss-logo-img {
+    height: 4rem;
+    width: 4rem;
+  }
 }
 
-.netflix{
-    background-image: url(../../assets/images/netflix-logo.webp);
-    @include background-image-properties(black);
+.netflix {
+  background-image: url(../../assets/images/netflix-logo.webp);
+  @include background-image-properties(black);
 }
-.tlc{
-    background-image: url(../../assets/images/tlc-logo.webp);
-    @include background-image-properties(black);
+.tlc {
+  background-image: url(../../assets/images/tlc-logo.webp);
+  @include background-image-properties(black);
 }
-.paramount{
-    background-image: url(../../assets/images/paramount-logo.webp);
-    @include background-image-properties(#221F23);
-    background-size: cover;
+.paramount {
+  background-image: url(../../assets/images/paramount-logo.webp);
+  @include background-image-properties(#221f23);
+  background-size: cover;
 }
-.prime{
-    background-image: url(../../assets/images/prime-video-logo.webp);
-    @include background-image-properties(black);
+.prime {
+  background-image: url(../../assets/images/prime-video-logo.webp);
+  @include background-image-properties(black);
 }
-.crave{
-    background-image: url(../../assets/images/crave-logo.webp);
-    @include background-image-properties(black);
+.crave {
+  background-image: url(../../assets/images/crave-logo.webp);
+  @include background-image-properties(black);
 }
-.apple{
-    background-image: url(../../assets/images/apple-tv-logo.webp);
-    @include background-image-properties(black);
+.apple {
+  background-image: url(../../assets/images/apple-tv-logo.webp);
+  @include background-image-properties(black);
 }
-.snwd{
-    background-image: url(../../assets/images/snwd-logo.webp);
-    @include background-image-properties(black);
+.snwd {
+  background-image: url(../../assets/images/snwd-logo.webp);
+  @include background-image-properties(black);
 }
-.hayu{
-    background-image: url(../../assets/images/hayu-logo.webp);
-    @include background-image-properties(black);
+.hayu {
+  background-image: url(../../assets/images/hayu-logo.webp);
+  @include background-image-properties(black);
 }

@@ -1,15 +1,12 @@
 import "./SearchPage.scss";
-
-import searchIcon from "../../assets/icons/icon-search.svg";
-
-const submitHandler = (event) => {
-    event.preventDefault();
-}
+import SearchResult from "../SearchResult/SearchResult";
+import SearchBar from "../SearchBar/SearchBar";
 
 function SearchPage() {
   return (
     <section className="search-page">
       <div className="search-page__container">
+        <SearchResult />
         <h1 className="search-page__title">Where did my show go?</h1>
         <p className="search-page__description">
           Don't know where your favourite movie is anymore?
@@ -22,18 +19,7 @@ function SearchPage() {
           your bundle.
         </h3>
 
-        <div className="search-page__input-icon-container">
-            <form className="search-page__search-form" onSubmit={submitHandler}>
-                <input className="search-page__search-input" type="search" />
-                <button className="search-page__search-button">
-                    <img
-                    className="search-page__search-icon"
-                    src={searchIcon}
-                    alt="Search Icon"
-                    />
-                </button>
-            </form>
-        </div>
+        <SearchBar />
 
         <div className="search-page__divider"></div>
 

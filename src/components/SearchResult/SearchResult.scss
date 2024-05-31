@@ -1,0 +1,31 @@
+.search-result {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  &__breadcrumb-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  &__breadcrumb-icon {
+    height: 2.25rem;
+  }
+  &__gallery {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  &__service-card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border: 0.25px solid #676e73;
+    box-shadow: rgba(103, 110, 115, 0.04) 0px 3px 5px;
+    padding: 1rem;
+  }
+  &__service-logo {
+    width: 100%;
+  }
+}

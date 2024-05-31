@@ -1,5 +1,21 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  width: 100%;
+  border-radius: 3rem;
+  border: none;
+  padding: 1rem;
+  background-color: #4b286d;
+  color: white;
+  &:hover {
+    background-color: black;
+  }
+}
+
+.button--disabled {
+  background-color: #676e73;
 }
