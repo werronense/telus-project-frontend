@@ -1,9 +1,10 @@
 import './Header.scss';
+import telusLogo from '../../assets/images/logo.svg';
 
 function Header () {
     return(
-        <header>
-            <div>abc</div>
+        <header className='header'>
+            <img className='header__img' src={telusLogo} alt="Telus Logo" />
         </header>
     );
 }
