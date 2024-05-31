@@ -1,0 +1,27 @@
+@use '../../styles/partials/mixins' as *;
+
+.search-page{
+    // flexbox
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // margin
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    // padding
+    @include site-side-padding;
+    &__title{
+        font-size: 3rem;
+        // width: 20rem;
+        // width: 100%;
+        text-align: center;
+    }
+    &__description{}
+    &__instruction{}
+    &__search-input{}
+    &__divider{}
+    &__subtitle{}
+    &__current-bundle-container{}
+    &__ss-logo-wrapper{}
+    &__ss-logo-img{}
+}
