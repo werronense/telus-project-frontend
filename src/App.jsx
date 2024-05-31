@@ -1,11 +1,12 @@
 import './App.scss';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Header from './components/Header/Header'
 
 function App() {
 
   return (
     <BrowserRouter>
-      {/* <Header /> */}
+      <Header />
       <Routes>
         {/* optional Home Page: to delete if not used */}
         {/* <Route path='/' element={<Home />} /> */}
