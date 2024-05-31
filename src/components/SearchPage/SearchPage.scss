@@ -40,6 +40,7 @@
             max-width: 23rem;
         }
     }
+    &__search-form{}
     &__search-input{
         width: 100%;
         height: 3rem;
@@ -51,17 +52,24 @@
             outline: 2px solid #4B286D;
         }
     }
-    &__search-icon-wrapper{
+    &__search-button{
         position: absolute;
         right: 0.5rem;
         top: 0.35rem;
         background-color: #4B286D;
         border-radius: 50%;
+        border: none;
         height: 2.25rem;
         width: 2.25rem;
         display: flex;
         justify-content: center;
         align-items: center;
+        &:hover{
+            cursor: pointer;
+        }
+        &:active{
+            background-color: #311c46;
+        }
     }
     &__search-icon{}
     &__divider{

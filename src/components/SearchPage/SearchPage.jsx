@@ -2,6 +2,10 @@ import "./SearchPage.scss";
 
 import searchIcon from "../../assets/icons/icon-search.svg";
 
+const submitHandler = (event) => {
+    event.preventDefault();
+}
+
 function SearchPage() {
   return (
     <section className="search-page">
@@ -19,14 +23,16 @@ function SearchPage() {
         </h3>
 
         <div className="search-page__input-icon-container">
-          <input className="search-page__search-input" type="search" />
-          <div className="search-page__search-icon-wrapper">
-            <img
-              className="search-page__search-icon"
-              src={searchIcon}
-              alt="Search Icon"
-            />
-          </div>
+            <form className="search-page__search-form" onSubmit={submitHandler}>
+                <input className="search-page__search-input" type="search" />
+                <button className="search-page__search-button">
+                    <img
+                    className="search-page__search-icon"
+                    src={searchIcon}
+                    alt="Search Icon"
+                    />
+                </button>
+            </form>
         </div>
 
         <div className="search-page__divider"></div>
