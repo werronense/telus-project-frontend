@@ -1,7 +1,27 @@
+@use "./variables" as *;
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+// Import fonts
+@font-face {
+  font-family: "Helvetica Neue";
+  font-weight: 400;
+  src: url("../../assets/fonts/HelveticaNeueRoman.otf") format("open-type");
+}
+
+@font-face {
+  font-family: "Helvetica Neue";
+  font-weight: 700;
+  src: url("../../assets/fonts/HelveticaNeueBold.otf") format("open-type");
+}
+
+body {
+  color: $primary-grey;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
 button {
@@ -9,7 +29,7 @@ button {
   border-radius: 3rem;
   border: none;
   padding: 1rem;
-  background-color: #4b286d;
+  background-color: $primary-purple;
   color: white;
   &:hover {
     background-color: black;
@@ -18,4 +38,13 @@ button {
 
 .button--disabled {
   background-color: #676e73;
+}
+
+.button--success {
+  background-color: $primary-green;
+}
+
+.button--success-inverse {
+  background-color: #fff;
+  color: $primary-green;
 }
