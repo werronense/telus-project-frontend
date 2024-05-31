@@ -9,7 +9,7 @@ function App() {
       <Routes>
         {/* optional Home Page: to delete if not used */}
         {/* <Route path='/' element={<Home />} /> */}
-        <Route path='/' element={<Search />} />
+        {/* <Route path='/' element={<Search />} /> */}
         {/* <Route path='/survey' element={<Survery />} /> */}
       </Routes>
     </BrowserRouter>
