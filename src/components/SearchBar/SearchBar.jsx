@@ -9,7 +9,11 @@ export default function SearchBar() {
   return (
     <div className="search-bar__input-icon-container">
       <form className="search-bar__search-form" onSubmit={submitHandler}>
-        <input className="search-bar__search-input" type="search" />
+        <input
+          className="search-bar__search-input"
+          type="search"
+          placeholder="Search Movie/TV Show Title"
+        />
         <button className="search-bar__search-button">
           <img
             className="search-bar__search-icon"
