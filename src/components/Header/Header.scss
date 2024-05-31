@@ -1,20 +1,17 @@
-// Temporary until mixin is created in separate mixin style sheet
-@mixin desktop {
-    @media (min-width: 768px) {
-        @content;
-    }
-}
+@use '../../styles/partials/mixins' as *;
 
 .header{
+    @include site-side-padding;
     border-bottom: 1px solid #676E73;
-    padding: 1rem;
-    $m-side-padding: 1rem;
+    // vertical padding (mobile width)
     $m-vert-padding: 1rem;
-    padding: $m-vert-padding $m-side-padding $m-vert-padding $m-side-padding;
+    padding-top: $m-vert-padding;
+    padding-bottom: $m-vert-padding;
     @include desktop {
-        $d-side-padding: 3rem;
+        // vertical padding (desktop width)
         $d-vert-padding: 1.5rem;
-        padding: $d-vert-padding $d-side-padding $d-vert-padding $d-side-padding;
+        padding-top: $d-vert-padding;
+        padding-bottom: $d-vert-padding;
     }
     &__logo-img{
         vertical-align: bottom;
