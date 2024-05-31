@@ -27,7 +27,7 @@ export default function SearchResult({setSearchInput, setIsSearchBarClicked, tit
           <p>Streaming Services</p>
           <div className="search-result__gallery">
             <div className="search-result__service-card">
-              <img className="search-result__service-logo" src={netflixLogo} />
+              <img className="search-result__service-logo" src={Netflix} />
               <button>Already in your Streaming Bundle</button>
             </div>
 
