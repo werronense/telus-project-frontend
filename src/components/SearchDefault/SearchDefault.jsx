@@ -1,7 +1,10 @@
 import "./SearchDefault.scss";
 import SearchBar from "../SearchBar/SearchBar";
 
-function SearchDefault() {
+function SearchDefault({setSearchInput, setIsSearchBarClicked, getTitles}) {
+
+    
+
   return (
     <section className="search-page">
       <div className="search-page__container">
@@ -17,7 +20,7 @@ function SearchDefault() {
           your bundle.
         </h3>
 
-        <SearchBar />
+        <SearchBar setSearchInput={setSearchInput} setIsSearchBarClicked={setIsSearchBarClicked} getTitles={getTitles} />
 
         <div className="search-page__divider"></div>
 
