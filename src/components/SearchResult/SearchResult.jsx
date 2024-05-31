@@ -14,17 +14,19 @@ export default function SearchResult() {
         <div className="search-result__search-bar-wrapper">
           <SearchBar />
         </div>
-        
+
         <div className="search-result__breadcrumb-group">
           <img className="search-result__breadcrumb-icon" src={arrowBackIcon} />
           <p>Back</p>
         </div>
         <div className="search-page__divider"></div>
-        <p>Streaming Services</p>
-        <div className="search-result__gallery">
-          <div className="search-result__service-card">
-            <img className="search-result__service-logo" src={netflixLogo} />
-            <button>Already in your Streaming Bundle</button>
+        <div className="search-result__content">
+          <p>Streaming Services</p>
+          <div className="search-result__gallery">
+            <div className="search-result__service-card">
+              <img className="search-result__service-logo" src={netflixLogo} />
+              <button>Already in your Streaming Bundle</button>
+            </div>
           </div>
         </div>
       </section>
