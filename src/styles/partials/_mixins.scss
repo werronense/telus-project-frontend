@@ -8,15 +8,25 @@
 }
 
 /* -------------------------------------------------------------------------- */
-/*                                Site Padding                                */
+/*                             Site Side Paddings                             */
 /* -------------------------------------------------------------------------- */
-@mixin site-side-padding () {
-    $m-side-padding: 1rem;
-    $m-vert-padding: 1rem;
-    padding: $m-vert-padding $m-side-padding $m-vert-padding $m-side-padding;
+@mixin site-side-padding {
+    $m-side-padding: 1.5rem;
+    padding-left: $m-side-padding;
+    padding-right: $m-side-padding;
     @include desktop {
         $d-side-padding: 3rem;
-        $d-vert-padding: 1.5rem;
-        padding: $d-vert-padding $d-side-padding $d-vert-padding $d-side-padding;
+        padding-left: $d-side-padding;
+        padding-right: $d-side-padding;
     }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                          Background Image & Sizing                         */
+/* -------------------------------------------------------------------------- */
+@mixin background-image-properties ($background-color) {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: $background-color;
 }

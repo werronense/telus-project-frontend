@@ -1,17 +1,17 @@
 import "./SearchPage.scss";
-import netflixLogo from '../../assets/images/asset 28.webp'
-import paramountLogo from '../../assets/images/asset 30.webp'
-import craveLogo from '../../assets/images/asset 32.webp'
-import hayuLogo from '../../assets/images/asset 39.webp'
-import snwdLogo from '../../assets/images/asset 35.webp'
+
+import searchIcon from '../../assets/icons/icon-search.svg';
 
 function SearchPage() {
   return (
     <section className="search-page">
+        <div className="search-page__container">
+
+
       <h1 className="search-page__title">Where did my show go?</h1>
       <p className="search-page__description">
-        Don't know where your favourite movie is anymore? Tired of searching
-        through dozens of streaming services to look for the show you were
+        Don't know where your favourite movie is anymore?<br/>
+        Tired of searching through dozens of streaming services to look for the show you were
         watching until last week?
       </p>
       <h3 className="search-page__instruction">
@@ -19,18 +19,24 @@ function SearchPage() {
         your bundle.
       </h3>
 
-      <input className="search-page__search-input" type="search" />
+      <div className="search-page__input-icon-container">
+        <input className="search-page__search-input" type="search" />
+        <div className="search-page__search-icon-wrapper">
+            <img className="search-page__search-icon" src={searchIcon} alt="Search Icon" />
+        </div>
+      </div>
 
       <div className="search-page__divider"></div>
 
       <h2 className="search-page__subtitle">Your Current bundle</h2>
 
       <div className="search-page__current-bundle-container">
-        <div className="search-page__ss-logo-wrapper"><img className="search-page__ss-logo-img" src={netflixLogo} alt="Netflix Logo" /></div>
-        <div className="search-page__ss-logo-wrapper"><img className="search-page__ss-logo-img" src={paramountLogo} alt="Netflix Logo" /></div>
-        <div className="search-page__ss-logo-wrapper"><img className="search-page__ss-logo-img" src={craveLogo} alt="Netflix Logo" /></div>
-        <div className="search-page__ss-logo-wrapper"><img className="search-page__ss-logo-img" src={hayuLogo} alt="Netflix Logo" /></div>
-        <div className="search-page__ss-logo-wrapper"><img className="search-page__ss-logo-img" src={snwdLogo} alt="Netflix Logo" /></div>
+        <div className="search-page__ss-logo-wrapper"><div className="search-page__ss-logo-img netflix"></div></div>
+        <div className="search-page__ss-logo-wrapper"><div className="search-page__ss-logo-img paramount"></div></div>
+        <div className="search-page__ss-logo-wrapper"><div className="search-page__ss-logo-img crave"></div></div>
+        <div className="search-page__ss-logo-wrapper"><div className="search-page__ss-logo-img hayu"></div></div>
+        <div className="search-page__ss-logo-wrapper"><div className="search-page__ss-logo-img snwd"></div></div>
+      </div>
       </div>
     </section>
   );
