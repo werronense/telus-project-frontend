@@ -4,6 +4,8 @@ import searchIcon from "../../assets/icons/icon-search.svg";
 export default function SearchBar() {
   const submitHandler = (event) => {
     event.preventDefault();
+
+    
   };
 
   return (

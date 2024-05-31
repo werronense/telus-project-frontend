@@ -10,9 +10,11 @@ export default function SearchResult() {
 
   return (
     <>
-      <SearchBar />
-
       <section className="search-result">
+        <div className="search-result__search-bar-wrapper">
+          <SearchBar />
+        </div>
+        
         <div className="search-result__breadcrumb-group">
           <img className="search-result__breadcrumb-icon" src={arrowBackIcon} />
           <p>Back</p>

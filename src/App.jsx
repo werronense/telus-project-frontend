@@ -2,17 +2,15 @@ import './App.scss';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './components/Header/Header'
 import SearchPage from './components/SearchPage/SearchPage';
+import SearchResult from './components/SearchResult/SearchResult';
 
 function App() {
-
   return (
     <BrowserRouter>
       <Header />
       <Routes>
-        {/* optional Home Page: to delete if not used */}
-        {/* <Route path='/' element={<Home />} /> */}
         <Route path='/search-page' element={<SearchPage />} />
-        {/* <Route path='/survey' element={<Survery />} /> */}
+        <Route path='/search-result' element={<SearchResult />} />
       </Routes>
     </BrowserRouter>
   )

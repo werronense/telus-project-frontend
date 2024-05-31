@@ -1,0 +1,90 @@
+@use "../../styles/partials/mixins" as *;
+
+.search-page {
+  // padding
+  @include site-side-padding;
+  display: flex;
+  justify-content: center;
+  &__container {
+    // flexbox
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // margin
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+    // text align
+    text-align: center;
+    max-width: 800px;
+  }
+  &__title {
+    color: #4b286d;
+    font-size: 3rem;
+  }
+  &__description {
+    color: #676e73;
+    margin: 1.5rem 0;
+  }
+  &__instruction {
+    color: #676e73;
+    margin: 1.5rem 0;
+    @include desktop {
+      max-width: 23rem;
+    }
+  }
+
+  &__divider {
+    height: 1px;
+    width: 100%;
+    background-color: black;
+  }
+  &__subtitle {
+    color: #4b286d;
+    margin: 1rem 0;
+  }
+  &__current-bundle-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.75rem;
+  }
+  //   &__ss-logo-wrapper {
+  //   }
+  &__ss-logo-img {
+    height: 4rem;
+    width: 4rem;
+  }
+}
+
+.netflix {
+  background-image: url(../../assets/images/netflix-logo.webp);
+  @include background-image-properties(black);
+}
+.tlc {
+  background-image: url(../../assets/images/tlc-logo.webp);
+  @include background-image-properties(black);
+}
+.paramount {
+  background-image: url(../../assets/images/paramount-logo.webp);
+  @include background-image-properties(#221f23);
+  background-size: cover;
+}
+.prime {
+  background-image: url(../../assets/images/prime-video-logo.webp);
+  @include background-image-properties(black);
+}
+.crave {
+  background-image: url(../../assets/images/crave-logo.webp);
+  @include background-image-properties(black);
+}
+.apple {
+  background-image: url(../../assets/images/apple-tv-logo.webp);
+  @include background-image-properties(black);
+}
+.snwd {
+  background-image: url(../../assets/images/snwd-logo.webp);
+  @include background-image-properties(black);
+}
+.hayu {
+  background-image: url(../../assets/images/hayu-logo.webp);
+  @include background-image-properties(black);
+}
